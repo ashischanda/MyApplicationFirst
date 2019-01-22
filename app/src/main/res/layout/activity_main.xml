@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/myColor" >
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:paddingTop="5px"
+        android:layout_below="@+id/editText1" >
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:padding="10dp"
+
+        android:inputType="numberSigned|numberDecimal"
+        android:text="@string/value"
+
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/radioGroup1"
+        android:layout_toEndOf="@+id/radioGroup1"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="24dp">
+
+        <requestFocus />
+    </EditText>
+
+    <RadioButton
+        android:id="@+id/radio1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/fahrenheit"
+        android:layout_marginLeft="22dp"
+        android:layout_marginStart="22dp"
+        android:layout_below="@+id/radioGroup1"
+        android:layout_alignLeft="@+id/editText1"
+        android:layout_alignStart="@+id/editText1"
+        android:layout_marginTop="33dp" />
+
+    <RadioButton
+        android:id="@+id/radio0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        android:text="@string/celsius"
+        android:layout_below="@+id/radio1"
+        android:layout_alignLeft="@+id/radio1"
+        android:layout_alignStart="@+id/radio1"
+        android:layout_marginTop="34dp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick"
+        android:paddingTop="5px"
+        android:text="@string/calc"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/radio0"
+        android:layout_alignStart="@+id/radio0" />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/sub"
+    android:padding="10dp"
+    android:textSize="14dp"
+    />
+</RelativeLayout>

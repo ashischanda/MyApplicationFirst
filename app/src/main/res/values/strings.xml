@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">Change Temperature</string>
+    <string name="fahrenheit"> Fahrenheit</string>
+    <string name="calc"> Calculate </string>
+    <string name="celsius"> Celsius</string>
+    <string name="value"> 39</string>
+    <string name="sub"> A sample Project for Mobile development class</string>
+</resources>
