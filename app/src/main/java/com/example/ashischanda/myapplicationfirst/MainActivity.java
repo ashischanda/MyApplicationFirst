@@ -39,8 +39,6 @@ public class MainActivity extends AppCompatActivity {
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
         // I am going to update this line
         // Why it is not getting updated commits
-
-
     }
 
     // This method is called at button click because we assigned the name to the
